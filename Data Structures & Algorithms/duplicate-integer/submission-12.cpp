@@ -1,0 +1,8 @@
+#include <bits/stdc++.h>  // imports everything — use this on LeetCode
+using namespace std;class Solution {
+public:
+    bool hasDuplicate(vector<int>& nums) {
+        unordered_set<int> st(nums.begin(), nums.end());
+        return st.size()!= nums.size();
+    } 
+};
